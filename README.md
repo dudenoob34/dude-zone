@@ -1,27 +1,11 @@
-Welcome to the...
-## Dude Hub
-_Where I'm just gonna post stuff that will be catergorized sometimes._
+Welcome to...
+# My game hub
+_A list of web games  on the internet that I personally find really interesting. You might find them interesting too!_
 _________________
-# Q&A
+### FAQ
 
-Q: What the heck is this?
+Q: Can I add something to this list?
 
-A: A website where miscellanous things will be posted.
+A: Yes. If you would like to add something to the list, create an issue detailing what game you want to be added with a link to the game itself.
 
-Q: Why did you make this?
 
-A: Thats a good question, 🤔 _uhh..._
-
-Q: Can I fork this website?
-
-A: No real benefit from doing so since there wont be much here, but yeah sure. 👍
-
-Q: HEY WHY ARE YOU RE-DISTRIBUTING RANDOM STUFF? 😠
-
-A: Uh, because I can? and everything here is open sourced?
-
-Q: HEY WHERE ARE MY CREDITS FOR MY STUFF!?!
-
-A: If you want me to add credits for your stuff. Make a message in the dicussions saying that you want credit for your stuff.
-________________
-Have fun using this ~piece of shit~ website.
