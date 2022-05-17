@@ -1,6 +1,6 @@
 Welcome to...
 # Dude's game hub
-_ A list of web games  on the internet that I personally find really interesting. You might find them interesting too!_
+_A list of web games  on the internet that I personally find really interesting. You might find them interesting too!_
 _________________
 ### FAQ
 
