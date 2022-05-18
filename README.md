@@ -1,5 +1,6 @@
 Welcome to...
 # Dude's game hub
+![thumbnail](HubPictureV3.png)
 _A list of web games  on the internet that I personally find really interesting. You might find them interesting too!_
 _________________
 ### FAQ
