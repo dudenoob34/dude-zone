@@ -6,7 +6,7 @@ _________________
 
 Q: Can I add something to this list?
 
-A: Yes. If you would like to add something to the list, create an issue detailing what game you want to be added with a link to the game itself.
+A: Yes, If you would like to add something to the list, create an issue detailing what game you want to be added with a link to the game itself.
 
 Q: Can games that are not browser-based be added to this list?
 
