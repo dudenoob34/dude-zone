@@ -7,7 +7,7 @@ _________________
 
 Q. Wait, why did the name change?
 
-A: Because my mind is so impure and I know others are too.
+A: Because my mind is so impure.
 
 Q: Can I add something to this list?
 
