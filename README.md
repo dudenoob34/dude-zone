@@ -1,7 +1,7 @@
 Welcome to...
-# Dude's game hub
+# Dude's place of games (name change because my mind is so impure)
 ![thumbnail](HubPictureV3.png)
-_A list of web games  on the internet that I personally find really interesting. You might find them interesting too!_
+_A list of web games on the internet that I personally find really interesting. You might find them interesting too!_
 _________________
 ### FAQ
 
