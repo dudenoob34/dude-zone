@@ -1,5 +1,5 @@
 Welcome to...
-# Dude's place of games
+# Dude's Zone
 ![thumbnail](HubPictureV3.png)
 _A list of web games on the internet that I personally find really interesting. You might find them interesting too!_
 _________________
