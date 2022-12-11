@@ -1,16 +1,61 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Page Not Found</title>
+  <link rel="icon" type="image/png" href="favicon.png" />	
+  <link href="new.css" rel="stylesheet" type="text/css" />
+  <link href="snackbar.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/8df7d40c3b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <nav class="bar" id="nav">
+    <h2 id="header"><a class="yex">Yex</a>'s Games</h2>
+    <a class="updown" id="updown" onclick="b=!b; xd()"><i id='ud' class="fa fa-fw fa-angle-double-up"></i></a>
+    <a href="index.html" target="_parent" data-tippy-content="Home"><i class="fa fa-fw fa-home"></i></a>
+    <a href="about.html" target="_parent" data-tippy-content="About"><i class="fa fa-fw fa-info-circle"></i></a>
+    <a href="games.html" target="_parent" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
+    <div class="has-dropdown"> 
+      <button id="settings" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></button>
+      <ul class="dropdown">
+        <li class="dropdown-item">
+          <a onclick="theme('red', this)" href="#">Red</a>
+        </li>
+        <li class="dropdown-item">
+          <a onclick="theme('rgb(50, 150, 255)', this)" href="#" class="active">Blue</a>
+        </li>
+        <li class="dropdown-item">
+          <a onclick="theme('limegreen', this)" href="#">Green</a>
+        </li>
+        <li class="dropdown-item">
+          <input type="color" id="thmclr"> 
+          <a href="#" data-custom onclick="theme('white', this, true)">Custom</a>
+        </li>
+      </ul>
+    </div>
+    <a href="bookmarklets.html" target="_parent" data-tippy-content="Bookmarklets"><i class="fa fa-fw fa-bookmark"></i></a>
+    <a href="chat.html" data-tippy-content="Chat"><i class="fa fa-fw fa-wechat"></i></a>
+    <a href="https://discord.gg/V49EfgSWgr" target="_parent" data-tippy-content="Discord"><i class="fab fa-discord"></i></a>
+    <a href="ide.html" data-tippy-content="IDE"><i class="fa fa-fw fa-code"></i></a>
+    <a class="active" data-tippy-content="Page Not Found"><i class="fa fa-fw fa-question"></i></a>
+  </nav>
+  <div class="loader">
+    <div class="loader-logo">
+      <img src="favicon.png" class="loader-logo-image"></img>
+      <h1 class="loader-logo-title"> Yex </h1>
     </div>
     <div class="loader-bar"></div>
   </div>
   <div class="loaded-overlay"></div>
   <h1>404 Error (Page Not Found)</h1>
   <p>ALL YOU HAD TO DO WAS FOLLOW THE DAMN LINKS</p>
+  <script src="popper.js"></script>
+  <script src="tippy.js"></script>
+  <script src="snackbar.js"></script>
+  <script src="updown.js"></script>
 </body>
 
 </html>
