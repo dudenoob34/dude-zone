@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link href="new.css" rel="stylesheet" type="text/css" />
+  <link href="snackbar.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/8df7d40c3b.js" crossorigin="anonymous"></script>
+  <style> 
+  :root {
+    --user-color: aqua;
+    --mention-color: mediumaquamarine;
+    --link-color: dodgerblue;
+    --link-hover-color: deepskyblue;
+    --first-gradient-color: aquamarine;
+    --second-gradient-color: aqua;
+    --third-gradient-color: dodgerblue;
+    --border-gradient-color: aqua;
+    --box-shadow-gradient-color: aqua;
+  }
+    
+  #chat {
+    display: none;
+    width: 70%;
+    height: 325px;
+    margin: 0 auto 0 auto;
+  }
+    
+  #message-form, #user-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }  
+  #message-form input, #user-form input {
+    width: clamp(35%, 40%, 45%);
+    height: 40px;
+    font-size: 20px;
+    font-family: arista;
+  }  
+  #message-form button, #user-form button {
+    width: clamp(85px, 105px, 115px);
+    height: 40px;
+    font-size: 20px;
+    margin-left: 5px;
+    text-align: center;
+    font-family: arista;
+  }  
+  #message-form button:hover, #user-form button:hover {
+    background-color: #777;
+  }    
+  #message-form button:active, #user-form button:active {
+    background-color: #555;
+  }   
+  #message-form input, #message-form button , #user-form input, #user-form button {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: 1px rgb(50, 150, 255) solid; 
+    background-color: #696969;
+  }
+  #message-form input[type=text]::placeholder, #user-form input[type=text]::placeholder {
+    color: white;
+  }  
+    
+  #messages {
+    list-style: none;
+    height: 325px;
+    padding:10px 10px;
+    margin: 0 auto 0 auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background: #3e3e3e;
+    border-radius: 15px;
+  }
+
+  li {
+    position: relative;
+    display: inline-block;
+    width: max-content;
+    white-space:nowrap;
+    height: 65px;
+    color: white;
+    font-size: 20px;
+  }
+
+  li #user {
+    color: var(--user-color);
+  }
+    
+  li #msg {
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  #fname {
+    user-select: none;
+    color: white;
+    font-size: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    box-shadow: 0 0 5px var(--box-shadow-gradient-color);
+    width:70px;
+    height:70px;
+    background-image: linear-gradient(215deg, var(--first-gradient-color), var(--second-gradient-color), var(--third-gradient-color));
+    border-radius: 100%;
+    border: 3px var(--border-gradient-color) solid;
+    margin-right: 10px;
+    margin-top: 15px;
+    transform: translateY(-17.5%);
+  }
+
+  #chat #messages > #fname:first-child {
+    margin-top: 0;
+  }
+
+  #mcolor {
+    color: var(--mention-color);
+  }
+
+  #clink {
+    display: inline-block;
+    color: var(--link-color);
+  }
+
+  #clink:hover {
+    transform: translateY(-5%);
+    color: var(--link-hover-color);
+  }
+
+  nav.bar > div.has-dropdown > ul.dropdown > li.dropdown-item > a[href] {
+    margin-top: 10px;
+  }
+
+  input[type=color]#thmclr {
+    margin-top: 10px;
+  }
+  </style>
+</head>
+<body>
+  <nav class="bar" id="nav">
+    <h2 id="header"><a class="yex">Yex</a>'s Chat</h2>
+    <a class="updown" id="updown" onclick="b=!b; xd()"><i id='ud' class="fa fa-fw fa-angle-double-up"></i></a>
+    <a href="index.html"><i class="fa fa-fw fa-home"></i></a>
+    <a href="about.html" data-tippy-content="About"><i class="fa fa-fw fa-info-circle"></i></a>
+    <a href="games.html" data-tippy-content="Games"><i class="fa fa-fw fa-gamepad"></i></a>
+    <div class="has-dropdown"> 
+      <button id="settings" data-tippy-content="Settings"><i class="fa fa-fw fa-gear"></i></button>
+      <ul class="dropdown">
+        <li class="dropdown-item">
+          <a onclick="theme('red', this)" href="#">Red</a>
+        </li>
+        <li class="dropdown-item">
+          <a onclick="theme('rgb(50, 150, 255)', this)" href="#" class="active">Blue</a>
+        </li>
+        <li class="dropdown-item">
+          <a onclick="theme('limegreen', this)" href="#">Green</a>
+        </li>
+        <li class="dropdown-item">
+          <input type="color" id="thmclr"> 
+          <a href="#" data-custom onclick="theme('white', this, true)">Custom</a>
+        </li>
+      </ul>
+    </div>
+    <a href="bookmarklets.html" data-tippy-content="Bookmarklets"><i class="fa fa-fw fa-bookmark"></i></a>
+    <a class="active"><i class="fa fa-fw fa-wechat"></i></a>
+    <a href="https://discord.gg/V49EfgSWgr" data-tippy-content="Discord"><i class="fab fa-discord"></i></a>
+    <a href="ide.html" data-tippy-content="IDE"><i class="fa fa-fw fa-code"></i></a>
+  </nav>
+  <div class="loader">
+    <div class="loader-logo">
+      <img src="favicon.png" class="loader-logo-image"></img>
+      <h1 class="loader-logo-title"> Yex </h1>
+    </div>
+    <div class="loader-bar"></div>
+  </div>
+  <div class="loaded-overlay"></div>
+  <h1>Chat</h1>
+
+  <form id="user-form">
+    <input id="user-input" type="text" placeholder="Enter A Username" />
+    <button id="user-btn" type="submit">Enter</button>
+  </form>
+  
+  <div id="chat">
+      <!-- messages will display here -->
+  <ul id="messages"></ul>
+
+      <!-- form to send message -->
+  <form id="message-form">
+    <input id="message-input" type="text" placeholder="Enter Message" />
+    <button id="message-btn" type="submit">Send</button>
+  </form>
+  </div>
+  <script src="popper.js"></script>
+  <script src="tippy.js"></script>
+  <script src="snackbar.js"></script>
+  <script src="updown.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<script src="https://yexex.github.io/js-addons/addons.js"></script>
+<script src="chat.js"></script>
+</body>
+
+</html>
