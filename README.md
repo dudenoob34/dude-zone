@@ -15,5 +15,5 @@ A: Yes, If you would like to add something to the list, create an issue detailin
 
 Q: Can games that are not browser-based be added to this list?
 
-A: No.
+A: Unless you can figure out a way to embed it so it can be played on the web. No.
 
