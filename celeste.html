@@ -1,0 +1,40 @@
+<!-- NOTE: Adding comments to any code you create/edit would make me very happy-->
+ <!DOCTYPE html>
+ <html>
+ 
+ <!--epic CSS customization-->
+ <head>
+   <title>Dude's Zone - Celeste (PICO-8)</title>
+   <link rel="shortcut icon" type="image/png" href="faviV2.png"/>
+   <link rel="stylesheet" href="stylesheets.css"> 
+ </head>
+ 
+ <!-- oh my goodness gracious thank you so much @PlainSys for giving me the javascript code-->
+ <body>           <!--"original" game from mountain658's website-->
+ <center><iframe id="embeddedGame" src="https://dudenoob34.github.io/mog/g/zceleste.html" width="50%" height="500" style="border:1px double #39FF14;"></iframe></center>
+ <br>
+ 
+ 
+ 
+ <!--everything below appears under the embed-->
+ 
+ 
+ 
+ <center><p>The game takes a while to load after pressing the play button. Please be patient.<p></center>
+ <br>
+ <!--fullscreen button-->
+ <center><button onclick="goFullscreen('embeddedGame'); return true">Fullscreen</button></center>
+ <!--fullscreen button code-->
+ <script>
+ function goFullscreen(id) {
+                             var element = document.getElementById(id);
+                             if (element.mozRequestFullScreen) {
+                                 element.mozRequestFullScreen();
+                             } else if (element.webkitRequestFullScreen) {
+                                 element.webkitRequestFullScreen();
+                             }
+                         }
+ </script>
+ </body>
+ 
+ </html>
