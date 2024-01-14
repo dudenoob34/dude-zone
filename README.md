@@ -3,17 +3,21 @@ Welcome to...
 ![thumbnail](HubPictureV3.png)
 _A list of web games on the internet that I personally find really interesting. You might find them interesting too!_
 _________________
-### FAQ
+As of 1/13/24..
 
-Q. Wait, why did the name change?
+# *FUCK EVERYTHING, WE ARE SO BACK!!*
 
-A: Because my mind is so impure.
+~~### FAQ~~
 
-Q: Can I add something to this list?
+~~Q. Wait, why did the name change?~~
 
-A: Yes, If you would like to add something to the list, create an issue detailing what game you want to be added with a link to the game itself.
+~~A: Because my mind is so impure.~~
 
-Q: Can games that are not browser-based be added to this list?
+~~Q: Can I add something to this list?~~
 
-A: Unless you can figure out a way to embed it so it can be played on the web. No.
+~~A: Yes, If you would like to add something to the list, create an issue detailing what game you want to be added with a link to the game itself.~~
+
+~~Q: Can games that are not browser-based be added to this list?~~
+
+~~A: Unless you can figure out a way to embed it so it can be played on the web. No.~~
 
