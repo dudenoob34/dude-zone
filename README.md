@@ -1,7 +1,7 @@
 Welcome to...
 # Dude's Zone
 ![thumbnail](HubPictureV3.png)
-_A list of web games on the internet that I personally find really interesting. You might find them interesting too!_
+_A minimalistic unblocked games website._
 _________________
 As of 1/13/24..
 
