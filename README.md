@@ -5,7 +5,9 @@ _A list of web games on the internet that I personally find really interesting. 
 _________________
 As of 1/13/24..
 
-# *FUCK EVERYTHING, WE ARE SO BACK!!*
+# *WE ARE SO BACK!!*
+
+Major website update in progress, stay tooned.
 
 ~~### FAQ~~
 
